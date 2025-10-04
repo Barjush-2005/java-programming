@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        float a=76.78f;
+        int n=16;
+        int po=3,ba=2;
+        System.out.printf("%d",(int)Math.floor(a));
+        System.out.printf("\n%d",(int)Math.ceil(a));
+        System.out.printf("\n%d",(int)Math.sqrt(n));
+        System.out.printf("\n%d",(int)Math.pow(ba,po));
+               
+    }
+}
