@@ -7,13 +7,19 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        float a=76.78f;
-        int n=16;
-        int po=3,ba=2;
-        System.out.printf("%d",(int)Math.floor(a));
-        System.out.printf("\n%d",(int)Math.ceil(a));
-        System.out.printf("\n%d",(int)Math.sqrt(n));
-        System.out.printf("\n%d",(int)Math.pow(ba,po));
-               
+        Scanner sc=new Scanner(System.in);
+        double num=sc.nextDouble();
+        int sqrNum=sc.nextInt();
+        int base=sc.nextInt();
+        int power=sc.nextInt();
+        int floorValue = (int)Math.floor(num);
+        int ceilValue = (int)Math.ceil(num);
+        int sqrtValue = (int)Math.sqrt(sqrNum);
+        int powValue = (int)Math.pow(base,power);
+        System.out.println(floorValue);
+         System.out.println(ceilValue);
+         System.out.println(sqrtValue);
+         System.out.println(powValue);
+        
     }
 }
