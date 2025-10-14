@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int starCount = 0;
+        int hashCount = 0;
+        for (char ch : s.toCharArray()) {
+            if (ch == '*')
+                starCount++;
+            else if (ch == '#')
+                hashCount++;
+        }
+        int diff = starCount - hashCount;
+        if (diff%2== 0) {
+            if(diff==0){
+            System.out.println("0");
+        } else
+            System.out.printf("The Difference of the character in the given string: %02d", Math.abs(diff));
+        }
+        else{
+             System.out.printf("The Difference of the character in the given string: %03d", Math.abs(diff));
+        }
+    }
+}
