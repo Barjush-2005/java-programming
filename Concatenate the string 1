@@ -8,10 +8,9 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String str1=sc.nextLine();
-        String str2=sc.nextLine();
-       String result=str1+str2;
-        System.out.println(result);
+        String str1=sc.next();
+        String str2=sc.next();
+        System.out.println(str1.concat(str2));
         
     }
 }
